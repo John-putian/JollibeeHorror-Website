@@ -1,0 +1,12 @@
+:root{color-scheme:dark;--bg:#141016;--ink:#f4e7dc;--muted:#d7bdaf;--accent:#ffba7d;--line:#70453e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}a{color:var(--accent);text-underline-offset:.22em}a:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.skip{position:absolute;left:1rem;top:-5rem;background:#252030;padding:.5rem;z-index:1}.skip:focus{top:.5rem}
+header,footer{padding:1rem clamp(1rem,5vw,4rem);background:#1c1520;border-bottom:1px solid var(--line)}header{display:flex;align-items:center;justify-content:space-between;gap:.5rem 2rem;flex-wrap:wrap}.brand{font-weight:750}nav{display:flex;flex-wrap:wrap;gap:.35rem 1rem}nav a,.brand{text-decoration:none}
+.hero{min-height:clamp(27rem,62vw,43rem);display:grid;align-items:center;padding:2rem clamp(1rem,8vw,8rem);background:linear-gradient(90deg,#130d16f7,#17101ab0 51%,#170e1666),url('media/04_Alex_Arrives.webp') center/cover}
+h1,h2,h3{line-height:1.16;margin:0 0 .7em}h1{font:700 clamp(2.35rem,7vw,6rem)/1.03 Georgia,serif;max-width:14ch;text-shadow:0 3px 4px #150b14}h1 em{font-style:normal;color:var(--accent)}h2{font:700 clamp(1.95rem,4vw,3rem)/1.1 Georgia,serif;color:var(--accent)}
+.button{display:inline-block;background:var(--accent);color:#241522;padding:.52rem .9rem;text-decoration:none;font-weight:700;margin:.25rem .2rem .25rem 0}.button[hidden]{display:none}.secondary{background:#30222e;color:var(--ink);border:1px solid var(--line)}
+.content{width:min(70rem,100% - 2rem);margin:auto;padding:2rem 0}.content section{padding:2.2rem 0;border-bottom:1px solid var(--line)}.content p,.content li{max-width:74ch}.video{width:min(100%,45rem);aspect-ratio:16/9;display:grid;place-items:center;text-align:center;border:1px solid var(--line);background:#241a26;color:var(--muted);margin:1rem 0}.video iframe,.video video{width:100%;height:100%;border:0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem}figure{margin:0;background:#241a26;border:1px solid var(--line)}img{display:block;width:100%;height:auto}figcaption{padding:.45rem .75rem}.features{padding-left:1.4rem}footer{color:var(--muted)}
+.keys{border-collapse:collapse;width:100%;max-width:560px}.keys td{border:1px solid rgba(255,255,255,.15);padding:6px 10px}.keys td:first-child{font-weight:bold;white-space:nowrap}
+
+.team{columns:2;max-width:560px}.team li{margin:4px 0;font-weight:bold}@media(max-width:600px){.team{columns:1}}
